@@ -1,0 +1,32 @@
+<%- include ('layout/header') %>
+<div class="container">
+    <div class="row"> 
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow">
+                <div class="card-header bg-primary">
+                    <h3 class="text-light">Sign Up</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="/signup" method="post" >
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" class="form-control form-control-lg" placeholder="Enter Username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control form-control-lg" placeholder="Enter Password" required>
+                        </div>
+                        <div class="mb-3 d-grid">
+                            <input type="submit" name="submit" value="Sign Up" class="btn btn-primary btn-lg" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ('layout/footer') %>
